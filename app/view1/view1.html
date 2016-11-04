@@ -1,1 +1,9 @@
-<p>This is the partial for view 1.</p>
+<div ng-app >
+	<div ng-controller="View1Ctrl">
+		<span>First Name : {{firstName}}</span><br/>
+		<span>Last Name : <span ng-bind="lastName"></span></span>
+		<div>{{getFullName}}</div>
+		<div><label>First Name :</label><input type="text" ng-model="firstName"></input></div>
+		<div><label>Last Name :</label><input type="text" ng-model="lastName"></input></div>
+	</div>
+</div>
